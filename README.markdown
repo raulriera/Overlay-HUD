@@ -10,9 +10,13 @@ This module is pretty simple to use, you just need to import the library like so
 
 And that is it, now you can use the following functions to show or hide your HUD
 
-	load(message, style); // Inits the HUD
-	show(); // displays the HUD to the user
-	hide(); // hides the HUD from the user	
+# Example
+
+For the simplest example, follow this
+
+	// inits the module and displays it to the user right away
+	var overlay = require("overlayHUD");
+	overlay.load().show();	
 
 # Docs
 
@@ -28,7 +32,7 @@ Animates the HUD and displays it to the user.
 
 ## hide()
 
-Animates the HUD and hides it from the user.
+Animates the HUD and hides it from the user. Another way to hide the HUD is by firing an app wide event called `OVERLAY:HUD:HIDE` (this can be customized)
 
 # About:
 
